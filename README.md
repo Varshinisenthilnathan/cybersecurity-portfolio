@@ -175,11 +175,11 @@ I am building hands-on labs covering:
 
 ## 📫 Connect With Me
 
-**LinkedIn:** [Add your LinkedIn URL]
+**LinkedIn:** www.linkedin.com/in/varshini-senthilnathan
 
-**GitHub:** [Add your GitHub URL]
+**GitHub:** [GitHub URL]
 
-**Email:** [Add your professional email]
+**Email:** iamvarshini31@gmail.com
 
 ---
 
