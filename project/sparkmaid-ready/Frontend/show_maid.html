@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Maids | SparkMaid</title>
+    <link rel="stylesheet" href="css/show_maid.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>All Maids</h1>
+            <button id="createBookingBtn" class="create-booking-btn">Create Your Booking</button>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <select id="filterAvailability">
+                <option value="">All Status</option>
+                <option value="AVAILABLE">Available</option>
+                <option value="BOOKED">Booked</option>
+                <option value="INACTIVE">Inactive</option>
+            </select>
+
+            <select id="filterGender">
+                <option value="">All Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="filterService">
+                <option value="">All Services</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Baby Sitting">Baby Sitting</option>
+                <option value="Painting">Painting</option>
+                <option value="Gardening">Gardening</option>
+                <option value="Driving">Driving</option>
+                <option value="Carpenter">Carpenter</option>
+            </select>
+
+            <button id="applyFilters">Apply Filters</button>
+        </div>
+
+        <!-- Container to display maids -->
+        <div id="maidContainer" class="maid-container"></div>
+    </div>
+
+    <script src="js/show_maid.js"></script>
+</body>
+</html>

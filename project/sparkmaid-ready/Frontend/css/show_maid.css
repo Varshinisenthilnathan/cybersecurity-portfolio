@@ -1,0 +1,93 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f0f9ff, #cbebff);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.back {
+ text-align: right;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.create-booking-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.create-booking-btn:hover {
+    background-color: #0056b3;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filters select,
+.filters button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.maid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.maid-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.maid-card h3 {
+    margin-top: 0;
+}
+
+.status-badge {
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.status-badge.available { color: green; }
+.status-badge.booked { color: orange; }
+.status-badge.inactive { color: red; }
+
+.no-data {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    margin-top: 20px;
+}

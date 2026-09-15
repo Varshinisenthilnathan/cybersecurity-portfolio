@@ -1,0 +1,99 @@
+/* Reset & basic styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    color: #333;
+}
+.back {
+ text-align: right;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Vacancies section */
+.vacancies {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.vacancies h2 {
+    font-size: 2rem;
+    color: #ff4d6d;
+    margin-bottom: 15px;
+}
+
+.vacancies p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.vacancies a {
+    color: #ff3366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.vacancies a:hover {
+    text-decoration: underline;
+}
+
+/* Job cards */
+.job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.job-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.job-card h3 {
+    color: #ff3366;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff758c;
+    color: white;
+    margin-top: 50px;
+}

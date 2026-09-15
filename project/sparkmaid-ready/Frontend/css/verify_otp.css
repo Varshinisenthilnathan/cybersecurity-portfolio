@@ -1,0 +1,77 @@
+/* Background for OTP page */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+}
+
+.form-container h2 {
+    margin-bottom: 25px;
+    color: #6a11cb;
+}
+
+.otp-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.otp-box {
+    width: 50px;
+    height: 60px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #2575fc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.otp-box:focus {
+    border-color: #ff758c;
+    box-shadow: 0 0 10px rgba(255,117,140,0.6);
+    outline: none;
+}
+
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff758c;
+    margin-bottom: 25px;
+}
+
+#verifyBtn {
+    background: #2575fc;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#verifyBtn:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}

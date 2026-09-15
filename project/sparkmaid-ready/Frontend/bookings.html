@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Bookings</title>
+    <link rel="stylesheet" href="css/bookings.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>All Bookings</h1>
+         <button id="createBookingBtn" class="create-booking-btn"
+        onclick="window.location.href='create_bookings.html'">
+        Create New Booking
+    </button>
+         <div class="back">
+         <a href="dashboard_admin.html">Back</a>
+         </div>
+        <p id="message"></p>
+
+        <div class="table-container">
+            <table id="bookingsTable">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Customer Name</th>
+                        <th>Maid Name</th>
+                        <th>Service</th>
+                        <th>Duration (months)</th>
+                        <th>Payment</th>
+                        <th>Payment Date</th>
+                        <th>Status</th>
+                        <th>Booking Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bookings will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+
+    <script src="js/bookings.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SparkMaid</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+       
+        <h2>Welcome to SparkMaid!</h2>
+        <p class="login-subtitle">Login to access your dashboard</p>
+
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <select id="role" required>
+            <option value="">Select Role</option>
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+        </select>
+        <!-- <label for="captcha">Enter CAPTCHA:</label>
+  <span id="captcha_text">{{ captcha }}</span>
+  <input type="text" id="captcha" name="captcha_input" required>
+    -->
+        <button id="loginBtn">Login</button>
+
+        <p id="message"></p>
+
+        <div class="signup-link">
+            <p>Don't have an account? <a href="register.html">Sign Up</a></p><br>
+            <p> It's okay. We all forget sometimes. <a href="forget_password.html">Forgot Password?</a><br>
+            </p>
+        </div>
+    
+    <!-- Privacy -->
+      <div class="privacy">
+        <br>
+        By logging in, you agree to our <a href="privacy.html" target="_blank">Privacy Policy</a>.
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

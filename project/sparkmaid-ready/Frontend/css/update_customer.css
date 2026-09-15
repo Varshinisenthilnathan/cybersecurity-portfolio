@@ -1,0 +1,109 @@
+/* update_customer.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the form */
+form {
+    background: #fff;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Form inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Submit button */
+form button[type="submit"] {
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+.back {
+text-align: right;
+}
+
+form button[type="submit"]:hover {
+    background: #218838;
+}
+
+/* Back button */
+#backBtn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#backBtn:hover {
+    background: #0056b3;
+}
+
+/* Message display */
+#message {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Success and error colors */
+#message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+#message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}

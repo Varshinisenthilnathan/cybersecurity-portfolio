@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Booking | SparkMaid</title>
+    <link rel="stylesheet" href="css/create_booking.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="back">
+         <a href="dashboard_admin.html">Back</a>
+         </div>
+    <div class="container">
+        <h1>Create New Booking</h1>
+        <form id="createBookingForm">
+            <!-- Customer ID is hidden, filled from session -->
+            <input type="hidden" id="customer_id" name="customer_id">
+
+            <label for="maid_id">Maid ID:</label>
+            <input type="text" id="maid_id" name="maid_id" required>
+
+            <label for="service">Service:</label>
+            <select id="service" name="service" required>
+                <option value="">Select Service</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Baby Sitting">Baby Sitting</option>
+                <option value="Painting">Painting</option>
+                <option value="Gardening">Gardening</option>
+                <option value="Driving">Driving</option>
+                <option value="Carpenter">Carpenter</option>
+            </select>
+
+            <label for="duration">Duration (Hours):</label>
+            <input type="number" id="duration" name="duration" min="0" required>
+
+            <label for="payment">Payment Amount:</label>
+            <input type="number" id="payment" name="payment" min="0" step="0.01">
+
+            <button type="submit">Create Booking</button>
+        </form>
+
+        <p id="message"></p>
+        <!-- <div class="back-link"> -->
+            <!-- <p><a href="show_maid.html">← Back to Maids</a></p> -->
+        <!-- </div> -->
+    </div>
+
+    <script src="js/create_bookings.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #629afb, #8332fb);
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.2);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: pulse 2s infinite;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #f4f35e;
+    transform: scale(1.1);
+}
+
+/* Main content */
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: rgba(255,255,255,0.9);
+    flex: 1 1 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.card-1 { background: linear-gradient(45deg, #ff9a9e, #fad0c4); }
+.card-2 { background: linear-gradient(45deg, #a18cd1, #fbc2eb); }
+.card-3 { background: linear-gradient(45deg, #fbc2eb, #a6c1ee); }
+
+/* Info Section */
+.info-section {
+    margin-top: 40px;
+    background-color: rgba(255,255,255,0.85);
+    padding: 20px;
+    border-radius: 15px;
+    animation: fadeIn 2s ease-in;
+}
+
+.info-section h2 {
+    color: #6a11cb;
+    margin-bottom: 15px;
+}
+
+/* Animations */
+/*@keyframes slideIn {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}*/
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}

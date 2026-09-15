@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2 id="sidebarTitle">Panel</h2>
+        <ul id="sidebarLinks">
+            <!-- Links will be populated by JS based on role -->
+        </ul>
+        <a href="#" id="logoutBtn">Logout</a>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Welcome to SparkMaid!, <span id="userName">User</span></h1>
+        </header>
+
+        <div class="cards" id="cardsContainer">
+            <!-- Cards populated by JS based on role -->
+        </div>
+
+        <section class="info-section" id="infoSection">
+            <!-- Info section populated by JS -->
+        </section>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

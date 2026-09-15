@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkMaid | Special Offers</title>
+    <link rel="stylesheet" href="css/offer_customer.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1>✨ SparkMaid Exclusive Offers ✨</h1>
+        <p>Get amazing discounts on all home services!</p>
+    </header>
+    
+
+    <main class="offers-container">
+        <!-- Cleaning -->
+        <div class="offer-card cleaning">
+            <h2>Cleaning Services</h2>
+            <p class="discount">30% OFF</p>
+            <p>Deep cleaning, sofa wash, and kitchen polish. Book today and sparkle your home!</p>
+
+        </div>
+
+        <!-- Cooking -->
+        <div class="offer-card cooking">
+            <h2>Cooking Services</h2>
+            <p class="discount">25% OFF</p>
+            <p>Hire professional cooks for your meals with great discounts on first bookings!</p>
+
+        </div>
+
+        <!-- Carpenter -->
+        <div class="offer-card carpenter">
+            <h2>Carpenter Services</h2>
+            <p class="discount">₹200 OFF</p>
+            <p>Fix your furniture, doors, and shelves. Skilled carpenters ready to help!</p>
+           
+        </div>
+
+        <!-- Painter -->
+        <div class="offer-card painter">
+            <h2>Painter Services</h2>
+            <p class="discount">40% OFF</p>
+            <p>Brighten your home with fresh colors this season. Limited-time offer!</p>
+           
+        </div>
+
+        <!-- Electrician -->
+        <div class="offer-card electrician">
+            <h2>Electrician Services</h2>
+            <p class="discount">₹150 OFF</p>
+            <p>Fix switches, fans, or wiring safely and affordably. Book your slot today!</p>
+           
+        </div>
+
+        <!-- Plumber -->
+        <div class="offer-card plumber">
+            <h2>Plumber Services</h2>
+            <p class="discount">20% OFF</p>
+            <p>Leaky taps or clogged pipes? Get it fixed by trusted professionals.</p>
+          
+        </div>
+
+        <!-- Gardener -->
+        <div class="offer-card gardener">
+            <h2>Gardening Services</h2>
+            <p class="discount">35% OFF</p>
+            <p>Transform your garden with our maintenance and landscaping experts.</p>
+        </div>
+
+        <!-- Laundry -->
+        <div class="offer-card laundry">
+            <h2>Laundry Services</h2>
+            <p class="discount">15% OFF</p>
+            <p>Get your clothes fresh and clean with doorstep pickup and delivery!</p>
+        </div>
+
+        <!-- Baby Sitting -->
+        <div class="offer-card babysitting">
+            <h2>Baby Sitting Services</h2>
+            <p class="discount">30% OFF</p>
+            <p>Trusted caregivers for your little ones. Safe and reliable service!</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 SparkMaid | Making Homes Shine ✨</p>
+    </footer>
+    <div class="back">
+         <a href="dashboard_admin.html">Back</a>
+         </div>
+
+    <script>
+        // Simple animation when page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".offer-card");
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.2}s`;
+                card.classList.add("show");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #f0f9ff, #cbebff);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.back {
+ text-align: right;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+
+h1 {
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filters select, .filters button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filters button {
+    background-color: #0066cc;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #004080;
+}
+
+.maid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.maid-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.maid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.maid-info h3 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.status-badge {
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.status-badge.available {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.status-badge.booked {
+    font-weight: bold;
+    color: #FF9800;
+}
+
+.status-badge.inactive {
+     font-weight: bold;
+    color: #9E9E9E;
+}
+
+.no-data {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.create-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.create-btn:hover {
+    background-color: #218838;
+}

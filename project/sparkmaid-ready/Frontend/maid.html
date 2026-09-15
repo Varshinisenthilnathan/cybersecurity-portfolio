@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maids List</title>
+    <link rel="stylesheet" href="css/maid.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1>Maids List</h1>
+            <button id="createMaidBtn" class="create-btn">+ Create New Maid</button>
+        </div>
+        <div class="back">
+         <a href="dashboard_admin.html">Back</a>
+         </div>
+
+        <!-- Filter Section -->
+        <div class="filters">
+            <select id="filterAvailability">
+                <option value="">All Status</option>
+                <option value="AVAILABLE">Available</option>
+                <option value="BOOKED">Booked</option>
+                <option value="INACTIVE">Inactive</option>
+            </select>
+
+            <select id="filterGender">
+                <option value="">All Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="filterService">
+                <option value="">All Services</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Baby Sitting">Baby Sitting</option>
+                <option value="painting">painting</option>
+                <option value="gardening">gardening</option>
+                <option value="drving">driving</option>
+                <option value="carpentor">Carpentor</option>
+                <option value="Security">Security</option>
+            </select>
+
+            <button id="applyFilters">Apply Filters</button>
+        </div>
+
+        <!-- Maids Container -->
+        <div id="maidContainer" class="maid-container"></div>
+    </div>
+
+    <script src="js/maid.js"></script>
+</body>
+</html>
