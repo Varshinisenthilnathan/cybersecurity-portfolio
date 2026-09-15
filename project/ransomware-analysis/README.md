@@ -126,6 +126,20 @@ Testing covered:
 
 `Python 3.10` · `VMware Workstation` · `Windows 10` · `Ubuntu 22.04` · `Microsoft Sysmon` · `Pandas` · `Scikit-learn` · `Random Forest` · `Joblib` · `Streamlit`
 
+
+## Code Structure
+
+The public repository includes the core Python source files used to build the analysis pipeline. Generated datasets, trained model artifacts, and raw ransomware logs are intentionally not included in the public repository.
+
+| File | Purpose |
+|---|---|
+| `src/feature_extractor.py` | Parses Sysmon logs and converts Event IDs into behavioural feature counts. |
+| `src/severity_scoring.py` | Calculates the weighted behavioural severity score and assigns Low/Medium/Critical labels. |
+| `src/train_model.py` | Trains and evaluates the Random Forest severity classifier. |
+| `src/train_family_model.py` | Trains and evaluates the Random Forest ransomware-family classifier. |
+| `src/predict_new_sample.py` | Demonstrates severity prediction for a new behavioural profile. |
+| `src/dashboard.py` | Runs the Streamlit dashboard for dataset exploration, feature importance and prediction. |
+
 ## Limitations
 
 - The number of safely collected live samples was limited.
